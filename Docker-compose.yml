@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  spring-app:
+    # Build කරන image එකට දෙන නම
+    image: employee-management-app
+    # Run වන container එකට ලේසියෙන් අඳුරගන්න දෙන නම
+    container_name: employee-management
+    # Host මැෂින් එකේ 8081 port එක container එකේ 8080 ට mapping කිරීම
+    ports:
+      - "8081:8080"
